@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import EntryWidget from '../components/EntryWidget';
-import DescriptionWidget from '../components/DescriptionWidget';
-import SpinInstantWidget from '../components/SpinInstantWidget';
+import EntryWidget from './EntryWidget';
+import DescriptionWidget from './DescriptionWidget';
+import SpinInstantWidget from './SpinInstantWidget';
 
 export default function RafflePage() {
   const [tickets, setTickets] = useState<number>(1);
@@ -17,7 +17,7 @@ export default function RafflePage() {
   }, [tickets]);
 
   return (
-    <div className="mt-10 relative min-h-screen text-white space-y-6">
+    <div className="mx-4 relative min-h-screen text-white space-y-6">
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2 items-start">
         <div ref={entryRef}>
           <EntryWidget

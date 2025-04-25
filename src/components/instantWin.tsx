@@ -1,3 +1,4 @@
+import React from 'react';
 export default function InstantWin() {
   return (
       <div className="h-full ml-4 w-full p-4 mt-4 rounded bg-gradient-to-b from-[#141414] to-[#1b1b1b] space-y-2">

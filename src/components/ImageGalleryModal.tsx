@@ -1,4 +1,5 @@
 import { FC, MouseEvent } from "react";
+import { cn } from "../utils/cn";
 
 interface Props {
   images: string[];
