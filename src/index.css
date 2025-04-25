@@ -1,0 +1,109 @@
+@import "tailwindcss";
+@tailwind utilities;
+@import "./styles/colors.css";
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar personalizat inspirat din SVG-ul dat */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #2C2C2C, rgba(44, 44, 44, 0.71));
+  border-radius: 9999px;
+  position: relative;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(142, 142, 142, 0), #8E8E8E, rgba(142, 142, 142, 0));
+  border-radius: 9999px;
+}
+
+@font-face {
+  font-family: 'gilroy-medium';
+  src: url('/fonts/gilroy-medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gilroy-regular';
+  src: url('/fonts/gilroy-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gilroy-ultralight';
+  src: url('/fonts/gilroy-ultralight.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'bohme';
+  src: url('/fonts/bohme.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'gilroy-regular', sans-serif;
+}
+
+body span 
+{
+  font-family: 'gilroy-medium', sans-serif;
+}
+
+.regular 
+{
+  font-family: 'gilroy-regular', sans-serif;
+}
+
+.medium 
+{
+  font-family: 'gilroy-medium', sans-serif;
+}
+
+.ultralight
+{
+  font-family: 'gilroy-ultralight', sans-serif;
+}
+
+.logomedium {
+  font-family: 'gilroy-medium', sans-serif;
+}
+.logofont {
+  font-family: 'bohme', sans-serif;
+}
+
+.percentage-bar 
+{
+  margin: 0 !important;
+}
