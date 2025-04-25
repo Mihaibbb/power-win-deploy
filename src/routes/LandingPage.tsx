@@ -1,17 +1,10 @@
-import { useState } from "react";
 import Competition from "../types/competition";
-import Participant from "../types/participant";
 import { Header } from "../components/Header";
 import { ImageCarousel } from "../components/ImageCarousel";
-import { ProgressBar } from "../components/ProgressBar";
-import { BrandQuestion } from "../components/BrandQuestion";
-import { TicketPurchase } from "../components/TicketPurchase";
-import { Button } from "../components/Button";
 import { CompetitionInfo } from "../components/CompetitionInfo";
 import RafflePage from "../components/rafflePage";
 import Footer from "../components/footer";
 import PowerWin from "../components/PowerWin";
-import { InstantWinWinners } from "../components/InstantWinWinners";
 import SpinWinModal from "../components/SpinWinModal";
 const getRandomNumber = (min: number, max: number): number =>
   Math.floor(Math.random() * (max - min + 1)) + min;
@@ -43,11 +36,6 @@ const mockCompetition: Competition = {
 
 
 export default function LandingPage() {
-  const [selectedAnswer, setSelectedAnswer] = useState<number>();
-  const [spinChance, setSpinChance] = useState(70);
-
-  const handlePurchase = (qty: number) =>
-    alert(`Ai cumpărat ${qty} bilete! Succes!`);
 
   return (
     <div className="">

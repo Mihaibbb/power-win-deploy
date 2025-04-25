@@ -1,6 +1,6 @@
 // src/components/SpinInstantWidget.tsx
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import SpinToWin from './SpinToWin';
 import InstantWin from './instantWin';
 import iphoneThumb from '../assets/iphone16.png';

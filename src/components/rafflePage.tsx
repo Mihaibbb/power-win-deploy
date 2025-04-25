@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import EntryWidget from '../components/EntryWidget';
 import DescriptionWidget from '../components/DescriptionWidget';
 import SpinInstantWidget from '../components/SpinInstantWidget';
